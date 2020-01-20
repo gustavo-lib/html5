@@ -51,23 +51,11 @@ button [disable]="valueinput==''" [disable]="!valueinput"
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
+    <tr ngFor*="let est of studiente nombre d emi array">
+      <th scope="row">{{est.code}}</th>
+      <td>{{est.nombre}}</td>
+      <td>{{est.code}}</td>
+      <td>{{est.code}}</td>
     </tr>
   </tbody>
 </table>
