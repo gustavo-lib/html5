@@ -1,0 +1,129 @@
+<div class="container-fluid">
+    <div class="row">
+
+
+        <form>
+
+
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-3">
+                    <input type="password" class="form-control" id="inputPassword">
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-6">
+                    <input type="password" class="form-control" id="inputPassword">
+                </div>
+
+                <div class="col-sm-3">
+
+                    <button type="button" class="btn btn-primary mr-2">button</button>
+                    <button type="button" class="btn btn-primary">button</button>
+
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+<div class="contariner-fluid my-2">
+    <h1><b class="d-flex justifi-content-center ">Lista de aitpo moviles </b></h1>
+    <div class="col-12 form-inline justify-content-center my-4">
+        <label for="searchByname">Buscar Auto</label>
+        <input type="text" name="" id="searchByname" [placeolder]="" height="5" width="100"
+            class="text mx-5 form-control col-md-6" [(ngModel)]="description">
+    </div>
+
+    <div class="col-12 form-inline justify-content-center my-4">
+        <label for="searchByname">Buscar Auto</label>
+        <input type="text" name="" id="searchByname" [placeolder]="" height="5" width="100"
+            class="text mx-5 form-control col-md-6" [(ngModel)]="branch">
+    </div>
+
+
+<div class="row my-2" >
+    <button type="button" class="btn btn-primary mx-2" [display]="descriptionSearch"
+    (clic)="search()">BUSCAR</button>
+    <button type="button" class="btn btn-secondary">LIMPIAR</button>
+    <button type="button" class="btn btn-success">AUMENTAR PRECIO</button>
+    <button type="button" class="btn btn-danger">CAMBIAR PLAN</button>
+    <button type="button" class="btn btn-warning">CAMBIAR MARCA</button>
+    
+    <button type="button" class="btn btn-primary">CONTAR POR PLANES</button>
+    <button type="button" class="btn btn-secondary mx-2">BUSCAR MARCA</button>
+    <button type="button" class="btn btn-secondary mx-2">DESCUENTO FORD</button>
+
+</div >
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <p class="text-center"></p>
+            <div class="col-6 bg-primary text-white">
+                <P class="text-center"> CANTIDAD DE DOCENTE:<strong>{{contPlanDocente}}</strong></P>
+                <P class="text-center"> CANTIDAD DE panes ahora 12:<strong>{{contPlanAhora12}}</strong></P>
+                
+                <P class="text-center"> CANTIDAD DE planes NACIONALES:<strong>{{contPlanAhoraNacion}}</strong></P>
+
+            </div>
+
+            <div class="col-6 bg-primary text-white">
+                <P class="text-center"> CANTIDAD DE FORD:<strong>{{contFord}}</strong></P>
+                <P class="text-center"> CANTIDAD DE CHEVROLET:<strong>{{contFiat}}</strong></P>
+                <P class="text-center"> CANTIDAD DE FIAT:<strong>{{}contFiat}</strong></P>
+                <P class="text-center"> CANTIDAD DE DOCENTE:<strong>{{}}</strong></P>
+
+            </div>
+
+            <div class="col-12">
+                <p class="text-center">TOTAL DE AUTOS DE LA LISTA: <strong>{{}}</strong></p>
+                <p class="text center"> TORAL DE PRECIOS <strong>{{}}</strong></p>
+            </div>
+
+
+        </div>
+    </div>
+
+<div>
+
+<div class="row my-2">
+    <button type="button" class="btn btn-success mx-2">TOTAL PRECIO FIAT</button>
+    <button type="button" class="btn btn-warning mx-2">CAMABIAR MARCA FORD</button>
+    <button type="button" class="btn btn-danger mx-2">AGREGAR DESCRIPCION</button>
+    <button type="button" class="btn btn-primary mx-2">CONTAR POR MARCAS</button>
+    <button type="button" class="btn btn-secondary mx-2">DESC. MAY Y MARCA A MINUS</button>
+    <button type="button" class="btn btn-danger mx-2">INVERTIR</button>
+    <button type="button" class="btn btn-primary mx-2">ORDENAR</button>
+    <button type="button" class="btn btn-danger mx-2">ELIMINAR ULTIMO</button>
+    <button type="button" class="btn btn-danger mx-2">FORM</button>
+
+</div>   
+
+
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+
+    <button type="button" class="btn btn-link">Link</button>
+
+
+
+type planType = 'AHORA 12' | 'DOCENTE' | 'NACIONAL'
+
+
+
+"
+class Aut{
+code: number;
+description:string;
+price:number;
+brand:string;
+plan:plantype;
+
+}
